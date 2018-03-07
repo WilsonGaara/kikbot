@@ -1,0 +1,5 @@
+﻿exports.run = async(client, message, args) => {
+   
+    client.user.setPresence({ game: { name: "Spotify e assistindo séries na Netflix com os humanos. (k!help)", type:  2} });
+
+    }
