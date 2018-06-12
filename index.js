@@ -26,7 +26,7 @@ console.log(`Liguei! `)
 client.on('guildMemberAdd', member => {
 
 
-    let channel = member.guild.channels.find('name', 'n_welcome')
+    let channel = member.guild.channels.find('name', 'testar-bot-javascript💻 ')
    
     if (!channel) return;
   var Discord200 = require('discord.js')
@@ -39,6 +39,21 @@ client.on('guildMemberAdd', member => {
     channel.send({embed : embed})
   })
 
+client.on('guildMemberRemove', member => {
+
+
+    let channel = member.guild.channels.find('name', 'testar-bot-javascript💻 ')
+   
+    if (!channel) return;
+  var Discord2020 = require('discord.js')
+  var embed2 = new Discord2020.RichEmbed()
+  .setAuthor(member.tag, member.user.displayAvatarURL)
+.setDescription(`😕 **|** Tchau, espero que nada de mal lhe-aconteça...`)
+  .setColor('RED')
+  .setTimestamp()
+  .setFooter(`ID do usuário: ${member.id}`, member.guild.iconURL)
+    channel.send({embed : embed2})
+  })
 
 
 
