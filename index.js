@@ -39,7 +39,7 @@ client.on('guildMemberAdd', member => {
     channel.send({embed : embed})
   })
 
-client.on('guildMemberRemove', member => {
+client.on('guildMemberDelete', member => {
 
 
     let channel = member.guild.channels.find('name', 'testar-bot-javascript💻 ')
